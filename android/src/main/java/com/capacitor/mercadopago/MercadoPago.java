@@ -12,20 +12,17 @@ import com.getcapacitor.PluginMethod;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
+
 import com.mercadopago.android.px.core.MercadoPagoCheckout;
 import com.mercadopago.android.px.model.Payment;
 import com.mercadopago.android.px.model.exceptions.MercadoPagoError;
-
 
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.StringReader;
-import java.util.HashMap;
-import java.util.Map;
 
 import static android.app.Activity.RESULT_CANCELED;
 
@@ -66,7 +63,7 @@ public class MercadoPago extends Plugin {
         Gson gson = builder.serializeNulls().create();
 
         JSObject ret = new JSObject();
-        
+
         String json = gson.toJson(payment);
         String actualKey = "";
         JsonReader jsonReader = new JsonReader(new StringReader(json));
