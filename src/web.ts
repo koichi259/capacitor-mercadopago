@@ -9,8 +9,7 @@ export class MercadoPagoWeb extends WebPlugin implements MercadoPagoPlugin {
     });
   }
 
-  async echo(options: { value: string }): Promise<{value: string}> {
-    console.log('ECHO', options);
+  async checkout(options: { publicKey: string; preferenceId: string; }): Promise<{}> {
     return options;
   }
 }
