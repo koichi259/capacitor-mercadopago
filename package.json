@@ -1,6 +1,6 @@
 {
   "name": "capacitor-mercadopago",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Native integration of Mercadopago for capacitor",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -16,8 +16,8 @@
     "@capacitor/core": "latest"
   },
   "devDependencies": {
-    "@capacitor/android": "^2.0.0",
-    "@capacitor/ios": "^2.0.0",
+    "@capacitor/ios": "latest",
+    "@capacitor/android": "latest",
     "rimraf": "^3.0.0",
     "typescript": "^3.2.4"
   },
